@@ -1,8 +1,8 @@
 import streamlit as st
 import openai
 
-st.title('STORY GENERATOR')
-st.subheader('I will create short story for you')
+st.title('JOKE GENERATOR')
+st.subheader('Keep smiling!')
 
 title = st.text_input('Tell me a joke about...', key="text")
 prompt = (f"Tell me a joke about {title}")
