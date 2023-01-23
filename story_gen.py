@@ -7,7 +7,7 @@ st.text('I will create short story for you')
 title = st.text_input('Tell me a joke about...', key="text")
 prompt = (f"Tell me a joke about {title}")
 
-openai.api_key = AI_TOKEN
+openai.api_key = st.secrets["AI_TOKEN"]
 if title:
     response = openai.Completion.create(
         model="text-curie-001",
